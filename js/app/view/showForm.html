@@ -1,0 +1,35 @@
+<div>
+    <div class="titleForm"> ${i18n.lblSuccesRegister} </div>
+    <div id="showUserForm" data-dojo-id="showUserForm" data-dojo-type="dijit/form/Form"
+         encType="multipart/form-data" action="" method="POST">
+        <table cellpadding="0" cellspacing="0" class="tableForm">
+            <tr>
+                <td class="td-label"> ${i18n.lblUserName}</td>
+                <td class="viewData"><div data-dojo-attach-point="regUserName"></div></td>
+            </tr>
+            <tr>
+                <td class="td-label"> ${i18n.lblEmail}</td>
+                <td><div data-dojo-attach-point="regEmail"></div></td>
+            </tr>
+            <tr>
+                <td class="td-label">${i18n.lblAltEmail}</td>
+                <td><div data-dojo-attach-point="regAltEmail"></div></td>
+            </tr>
+            <tr>
+                <td class="td-labelPhone">${i18n.lblPhone}</td>
+                <td><div data-dojo-attach-point="regPhone"></div></td>
+            </tr>
+            <tr>
+                <td class="td-labelTextArea">${i18n.lblPostalAddress}</td>
+                <td><div data-dojo-attach-point="regPostalAddress"></div></td>
+            </tr>
+            <tr>
+                <td class="td-label">${i18n.lblCountry}</td>
+                <td><div data-dojo-attach-point="regCountry"></div></td>
+            </tr>
+        </table>
+        <div class="buttonForm">
+            <button data-dojo-attach-point="returnRegForm"></button>
+        </div>
+    </div>
+</div>

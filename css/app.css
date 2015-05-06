@@ -1,0 +1,103 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow:hidden;
+}
+#borderContainer {
+    width: 100%;
+    height: 80%;
+    padding: 2% 10% 0 30%;
+}
+#appForm{
+    background-color: #F4FAFB;
+    border: 2px solid #E3F1EB;
+    width: 600px;
+}
+.mainForm{
+    width: 99%;
+    height: 700px;
+}
+.titleForm{
+    color: #54927C;
+    font-size: 2.0em;
+    padding : 0.5em
+}
+.adviceForm{
+    border-style: dotted;
+    border-color: #008800;
+    border-width: 1px;
+    background-color: #E4F2EC;
+    margin: 1em;
+    padding: 0.3em;
+}
+.asterisk{
+    font-weight: bold;
+    color: red;
+}
+.alertValidation{
+    text-align: center;
+    font-weight: bold;
+    margin: 0.4em auto 0 auto;
+    color: red;
+}
+.buttonForm{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+
+}
+.labelForm{
+    color: #54927C;
+    padding: 0.4em 0 0.4em 0;
+}
+.tableForm{
+    width: 92%;
+    border-width: 0px;
+}
+.td-label{
+    font-size: 1.0em;
+    float: right;
+    color: #54927C;
+    background-color: #E3F1EB;
+    width: 180px;
+    height: 20px;
+    text-align: right;
+    vertical-align: middle;
+    margin: .3em 1em 0 1em;
+    padding: .3em ;
+}
+.td-labelTextArea{
+    font-size: 1.0em;
+    float: right;
+    color: #54927C;
+    background-color: #E3F1EB;
+    width: 180px;
+    height: 40px;
+    text-align: right;
+    vertical-align: middle;
+    margin: .3em 1em 0 1em;
+    padding: 1.8em .3em .3em .3em;
+}
+.td-labelPhone{
+    font-size: 1.0em;
+    float: right;
+    color: #54927C;
+    background-color: #E3F1EB;
+    width: 180px;
+    height: 20px;
+    text-align: right;
+    vertical-align: middle;
+    margin: .3em 1em 0 1em;
+    padding: 1em .3em .3em .3em;
+}
+.tr-labelPhone{
+    font-size: 0.8em;
+    color: #54927C;
+}
+.viewData{
+    width: 400px;
+}
+

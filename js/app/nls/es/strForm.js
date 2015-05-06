@@ -1,0 +1,27 @@
+define({
+    lblRegAccount: "Registro - Crear Cuenta",
+    lblRequiredFields1: "Los campos marcados con ",
+    lblRequiredFields2: " son obligatorios",
+    lblUserName: "Usuario",
+    lblEmail: "E-Mail ID",
+    lblAltEmail: "E-Mail ID Alternativo",
+    lblPhone: "Teléfono",
+    lblCountryCode: "Cód. País",
+    lblCityCode: "Cód. Ciudad",
+    lblPhoneNumber: "Número Teléfono",
+    lblPostalAddress: "Código Postal",
+    lblCountry: "País",
+    lblSelectOne: "------------ Seleccione Uno ------------",
+    lblPassword: "Contraseña",
+    lblConfirmPassword: "Confirmar Contraseña",
+    lblTerms1: "Acepto los ",
+    lblTerms2: "Terminos de Uso",
+    lblContinue: "Continuar >>",
+    lblReset: "Limpiar",
+    msgFormInvalid: "Por favor, los datos ingresados son invalidos",
+    msgPassInvalid: "Por favor, las contraseñas no son iguales",
+    msgTermsNotAccepted: "Por favor aceptar los términos de uso para continuar",
+
+    lblSuccesRegister: "Registro exitoso",
+    lblBack: "Regresar"
+});

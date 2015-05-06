@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Register User</title>
+<link rel="stylesheet" type="text/css" href="js/dojo/resources/dojo.css" />
+<link rel="stylesheet" type="text/css" href="js/dijit/themes/claro/claro.css" />
+<link rel="stylesheet" type="text/css" href="css/app.css" />
+<script>
+    var dojoConfig = {
+        async : true,
+        parseOnLoad: true,
+        locale: location.search.substring(1)
+    };
+</script>
+<script src="js/dojo/dojo.js"></script>
+<script>
+require([ "app/main",   "dojo/domReady!"],
+    function(main ) {
+		var mainForm = main();
+        mainForm.placeAt("main", "last");
+    });
+
+</script>
+</head>
+<body class="claro">
+    <div id="main"></div>
+</body>
+</html>

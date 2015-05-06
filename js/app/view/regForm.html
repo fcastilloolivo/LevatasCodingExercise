@@ -1,0 +1,118 @@
+<div>
+	<div class="titleForm"> ${i18n.lblRegAccount} </div>
+	<div class="adviceForm"> ${i18n.lblRequiredFields1} <span class="asterisk"> * </span> ${i18n.lblRequiredFields2} </div>
+
+	<div id="regUserForm" data-dojo-id="regUserForm" data-dojo-type="dijit/form/Form"
+		 encType="multipart/form-data" action="" method="POST">
+	<table cellpadding="0" cellspacing="0" class="tableForm">
+		<tr>
+			<td class="td-label"> <span class="asterisk">*</span> ${i18n.lblUserName}</td>
+			<td>
+                <input id="txtUserName" required="true" data-dojo-type="dijit/form/ValidationTextBox"
+                    data-dojo-props="style:'width:250px'"/>
+			</td>
+		</tr>
+		<tr>
+			<td class="td-label"><span class="asterisk">*</span> ${i18n.lblEmail}</td>
+			<td>
+                <input id="txtEmail" required="true" data-dojo-type="dijit/form/ValidationTextBox"
+                       data-dojo-props="validator: dojox.validate.isEmailAddress, style:'width:350px'" />
+            </td>
+		</tr>
+		<tr>
+			<td class="td-label">${i18n.lblAltEmail}</td>
+			<td>
+                <input id="txtAlterEmail" data-dojo-type="dijit/form/ValidationTextBox"
+                       data-dojo-props="validator: dojox.validate.isEmailAddress, style:'width:350px'" />
+            </td>
+		</tr>
+		<tr>
+			<td class="td-labelPhone">${i18n.lblPhone}</td>
+			<td align="center">
+				<table cellspacing="2" cellpadding="2" border="0" align="left">
+					<tr class="tr-labelPhone">
+						<td>${i18n.lblCountryCode}</td>
+						<td> - </td>
+						<td>${i18n.lblCityCode}</td>
+						<td> - </td>
+						<td>${i18n.lblPhoneNumber}</td>
+					</tr>
+					<tr>
+						<td>
+                            <input type="text" data-dojo-type="dijit/form/NumberTextBox" id="txtCountryCode"
+                                    data-dojo-props="constraints:{pattern:'##'}, style:'width:60px'" />
+						</td>
+						<td> - </td>
+						<td>
+                            <input type="text" data-dojo-type="dijit/form/NumberTextBox" id="txtCityCode"
+                                   data-dojo-props="constraints:{pattern:'##'}, style:'width:43px'" />
+						</td>
+						<td> - </td>
+						<td>
+                            <input type="text" data-dojo-type="dijit/form/NumberTextBox" id="txtPhoneNumber"
+                                   data-dojo-props="constraints:{pattern:'##'}, style:'width:90px'" />
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="td-labelTextArea">
+				<span class="asterisk">*</span> ${i18n.lblPostalAddress}
+			</td>
+			<td>
+               <textarea id='txtPostalAddress' required='true' rows='3' cols='35' data-dojo-type='valSimpleTextArea'></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td class="td-label">
+				<span class="asterisk">*</span> ${i18n.lblCountry}
+			</td>
+			<td>
+                <div dojoType="dojo.data.ItemFileReadStore"
+                     jsId="storeCountries"
+                     url="js/app/assets/countries.json"></div>
+
+                <input data-dojo-type="dijit/form/FilteringSelect"
+                       data-dojo-props="store:storeCountries, searchAttr:'value', placeHolder: '${i18n.lblSelectOne}', style:'width:210px'"
+                       id="selCountry" />
+			</td>
+		</tr>
+
+		<tr>
+			<td class="td-label">
+				<span class="asterisk">*</span> ${i18n.lblPassword}
+			</td>
+			<td>
+                <input id="txtPassword" required="true" data-dojo-type="dijit/form/ValidationTextBox"
+                       data-dojo-props="type: 'password', style:'width:150px'"/>
+			</td>
+		</tr>
+		<tr>
+			<td class="td-label">
+				<span class="asterisk">*</span> ${i18n.lblConfirmPassword}
+			</td>
+			<td>
+                <input id="txtRePassword" required="true" data-dojo-type="dijit/form/ValidationTextBox"
+                       data-dojo-props="type: 'password', style:'width:150px'"/>
+			</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td><div class="labelForm">
+                    <input id="chkTerms" data-dojo-type="dijit/form/CheckBox" />
+                    <label for="chkTerms">${i18n.lblTerms1} <a href='#'>${i18n.lblTerms2}</a></label></div>
+			</td>
+		</tr>
+        <tr>
+            <td colspan="2">
+                <div class="alertValidation" id="msgValidation" data-dojo-attach-point="msgValidation"></div>
+            </td>
+        </tr>
+	</table>
+        <div class="buttonForm">
+            <button data-dojo-attach-point="registerUser"></button>
+            <button data-dojo-attach-point="clearForm"></button>
+        </div>
+	</div>
+</div>
